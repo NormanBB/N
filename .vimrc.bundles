@@ -1,0 +1,8 @@
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"插件配置(Github其他用户下的repos,需要写出”用户名/repos名”)
+" Solarized: 非常流行的配色。
+Plugin 'altercation/vim-colors-solarized'
+
