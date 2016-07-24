@@ -35,12 +35,7 @@ set incsearch "在输入要搜索的文字时，vim会实时匹配
 set backspace=indent,eol,start whichwrap+=<,>,[,] "允许退格键的使用
 set smartindent 
 set foldenable 
-set number "显示行号
-set ruler  "显示光标当前位置
 vmap <C-c> "+y
-set laststatus=2 "总是显示状态栏
-"开启光亮光标行
-set cursorline
 set nowrap
 " 自适应不同语言的智能缩进
  filetype indent on
@@ -54,14 +49,45 @@ set smarttab
 set autoindent
 " 关闭右侧滚动条
 set guioptions-=r
-"高亮显示搜索结果
-set hlsearch
+
 let g:solarized_termtrans=1
 set wildmenu 
 set ignorecase
-set nowrap
 let g:solarized_termcolors=256
 
+" 总是显示状态栏
+set laststatus=2
+" 显示光标当前位置
+set ruler
+" 开启行号显示
+set number
+" 高亮显示当前行/列
+set cursorline
+set cursorcolumn
+" 高亮显示搜索结果
+set hlsearch
+" 设置状态栏主题风格
+let g:Powerline_colorscheme='solarized256'
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'   "youcompleteme 配置
+
+
+
+
+" syntastic {{{
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_enable_highlighting = 1
+let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1 
+let g:syntastic_check_on_wq = 1 
+
+" }}}
 
 
 
