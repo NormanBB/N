@@ -35,7 +35,7 @@ set incsearch "在输入要搜索的文字时，vim会实时匹配
 set backspace=indent,eol,start whichwrap+=<,>,[,] "允许退格键的使用
 set smartindent 
 set foldenable 
-vmap <C-c> "+y
+
 set nowrap
 " 自适应不同语言的智能缩进
  filetype indent on
@@ -71,23 +71,6 @@ let g:Powerline_colorscheme='solarized256'
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'   "youcompleteme 配置
 
-
-
-
-" syntastic {{{
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_enable_highlighting = 1
-let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1 
-let g:syntastic_check_on_wq = 1 
-
-" }}}
 
 
 
