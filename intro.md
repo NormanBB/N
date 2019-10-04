@@ -24,7 +24,7 @@
 
 对upc这个进程进行分析后发现
 
-![](https://github.com/NormanBB/N/blob/master/%E6%A0%B7%E6%9C%AC2.jpg)
+![](https://github.com/NormanBB/N/blob/master/%E6%A0%B7%E6%9C%AC2.jpg?raw=true)
 
 uplay登录时访问的ip地址，将ip后最后一组改为.0/24添加进rules。如xxx.xxx.xxx.xxx改为xxx.xxx.xxx.0/24。若获取到游戏需要用到的域名，则可以可以对域名进行查询以获取ip。参考 ：[DNS查询](http://tool.chinaz.com/dns/)
 
